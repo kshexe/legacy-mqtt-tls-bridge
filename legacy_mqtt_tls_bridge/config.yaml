@@ -1,0 +1,26 @@
+---
+name: Legacy MQTT TLS Bridge
+version: "1.0.0"
+slug: legacy_mqtt_tls_bridge
+description: >-
+  Accepts legacy TLS1.1 MQTT connections on a dedicated port and forwards
+  them in plaintext to your existing Mosquitto broker. For old embedded
+  devices (e.g. Rinnai SmartLink boilers) that cannot negotiate modern
+  TLS/ciphers with an ECDSA certificate.
+url: https://github.com/YOUR_GITHUB_USER/legacy-mqtt-tls-bridge
+arch:
+  - amd64
+  - aarch64
+init: false
+startup: services
+boot: auto
+ports:
+  8885/tcp: 8885
+ports_description:
+  8885/tcp: Legacy TLS1.1 MQTT (forwarded to your Mosquitto broker)
+options:
+  target_host: core-mosquitto
+  target_port: 1883
+schema:
+  target_host: str
+  target_port: port
