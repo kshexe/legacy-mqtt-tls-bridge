@@ -3,7 +3,7 @@
 Accepts old TLS1.1 MQTT connections on port **8885** and forwards them, in
 plaintext, to your existing Mosquitto broker (default: `core-mosquitto:1883`).
 
-Built for legacy embedded devices — e.g. a Rinnai SmartLink boiler — whose
+Built for legacy embedded devices whose
 TLS stack only supports TLS1.1 and RSA key-exchange cipher suites, which a
 modern ECDSA certificate (as used by the standard Mosquitto add-on) cannot
 satisfy.
