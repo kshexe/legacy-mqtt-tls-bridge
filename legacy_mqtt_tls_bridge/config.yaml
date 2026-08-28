@@ -4,8 +4,7 @@ version: "1.0.0"
 slug: legacy_mqtt_tls_bridge
 description: >-
   Accepts legacy TLS1.1 MQTT connections on a dedicated port and forwards
-  them in plaintext to your existing Mosquitto broker. For old embedded
-  devices that cannot negotiate modern TLS/ciphers with an ECDSA certificate.
+  them in plaintext to your existing Mosquitto broker
 url: https://github.com/kshexe/legacy-mqtt-tls-bridge
 arch:
   - amd64
