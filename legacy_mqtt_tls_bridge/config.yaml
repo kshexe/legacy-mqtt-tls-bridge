@@ -1,6 +1,6 @@
 ---
 name: Legacy MQTT TLS Bridge
-version: "1.0.1"
+version: "1.0.2"
 slug: legacy_mqtt_tls_bridge
 description: >-
   Accepts legacy TLS1.1 MQTT connections on a dedicated port and forwards
